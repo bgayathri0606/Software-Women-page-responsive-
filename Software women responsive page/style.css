@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+  background: var(--background);
+}
+
+*::selection {
+  background: var(--round-color);
+  color: #fff;
+}
+
+:root {
+  --background: #efede6;
+  --round-color: #9398f9;
+  --heading-color: #2c2c4f;
+}
+
+.container {
+  display: relative;
+  max-width: 1500px;
+  height: 900px;
+  border: 1px solid #eee;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  max-width: 350px;
+  margin: 4rem 10rem;
+}
+
+.round {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  padding-top: 0.4em;
+  font-weight: 500;
+  font-size: 1.5rem;
+  background: var(--round-color);
+  font-family: "Yusei Magic", sans-serif;
+  transition: 0.5s;
+}
+
+.round:hover {
+  transform: rotate(360deg);
+}
+
+.font {
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 300;
+  transition: 0.5s;
+}
+
+li:hover {
+  transform: scale(1.2) translateY(-15px);
+}
+
+.green {
+  color: green;
+}
+
+.gray {
+  color: var(--round-color);
+}
+
+.violet {
+  color: violet;
+}
+
+.flex li b {
+  color: var(--heading-color);
+  font-size: 19px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.left {
+  margin-left: 20rem;
+}
+
+.left h1 {
+  dislay: absolute;
+  width: 500px;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--heading-color);
+}
+
+.left p {
+  width: 450px;
+  margin-bottom: 1rem;
+}
+
+.left .trial,
+.left i {
+  color: #9398f9;
+  margin-right: 5px;
+}
+
+.left i,
+.round,
+.font {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: auto;
+    height: auto;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .hero {
+    display: grid;
+  }
+
+  ul {
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    padding-left: 25px;
+  }
+
+  .left {
+    margin-left: 7rem;
+  }
+
+  .left h1 {
+    font-size: 2.5rem;
+    margin-left: -5rem;
+  }
+
+  .left p {
+    margin-left: -5rem;
+    font-size: 14px;
+  }
+
+  .trial {
+    margin-left: -5rem;
+    font-size: 14px;
+  }
+
+  img {
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+}
